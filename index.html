@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="styles.css" rel="stylesheet">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>Tree</title>
+</head>
+
+<body>
+
+  <div class='footer'>
+    <div class='block_btn'>
+      <div class='title_btn'>добавить элемент в любую ветку указав ID родительского элемента</div>
+      <div class='block_input'>
+        <input id="inputAdd" class="inputs"></input>
+        <button id='btnAdd' class="buttons">ENTER Id</button>
+      </div>
+    </div>
+    <div class='block_btn'>
+      <div class='title_btn'> перенести любой элемент в любую другую ветку указав ID новой ветки</div>
+      <div class='block_input'>
+        <input id="inputFrom" class='inputs' style="width:60px;"></input> =>
+        <input id="inputTo" class='inputs' style="width:60px;"></input>
+        <button id='btnReplace' class='smallButtons' style="width:100px;">ENTER Id => Id</button>
+      </div>
+    </div>
+    <div class='block_btn'>
+      <div class='title_btn'> удалить элемент включая дочерние элементы</div>
+      <div class='block_input'>
+        <input id="inputDelete" class='inputs'></input>
+        <button id='btnDelete' class='buttons'>ENTER Id</button>
+      </div>
+    </div>
+    <div class='block_btn'>
+      <div class='title_btn'>удалить элемент без удаления дочерних элементов перенеся их в ближайший родительский
+        элемент</div>
+      <div class='block_input'>
+        <input id="inputReplaceKids" class='inputs'></input>
+        <button id='btnReplaceKids' class='buttons'>ENTER Id</button>
+      </div>
+    </div>
+  </div>
+
+  <div class='wrapTree' >
+    <div class='tree' id='fieldTree'>
+
+    </div>
+  </div>
+
+  <script src="init.js"></script>
+</body>
+
+</html>
